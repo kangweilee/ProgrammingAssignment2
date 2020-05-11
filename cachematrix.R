@@ -5,6 +5,10 @@
 ## Write a short comment describing this function
 ## makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
 
+
+
+## set i to NULL
+## assign y to x and assign NULL to y.  
 ## set the value of the matrix
 ## get the value of the matrix
 ## set the value of the mean
@@ -28,6 +32,10 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Write a short comment describing this function
 ## cacheSolve: This function computes the inverse of the special "matrix" returned by makeCacheMatrix above. If the inverse has already been calculated (and the matrix has not changed), then the cachesolve should retrieve the inverse from the cache.
 
+## calculate the inverse that is created from the makeCacheMatrix.
+## Before it calcuate, function checks to see if it has already done so.  
+## If already done, skip calculation and return getting cashed data.
+## Else, it calcuate use solve(x).
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
